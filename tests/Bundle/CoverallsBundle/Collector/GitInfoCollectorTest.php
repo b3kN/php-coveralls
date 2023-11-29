@@ -43,8 +43,8 @@ final class GitInfoCollectorTest extends ProjectTestCase
      * @var array
      */
     private $getRemotesValue = [
-        "origin\tgit@github.com:php-coveralls/php-coveralls.git (fetch)",
-        "origin\tgit@github.com:php-coveralls/php-coveralls.git (push)",
+        "origin\tgit@github.com:b3kn/php-coveralls-with-psr.git (fetch)",
+        "origin\tgit@github.com:b3kn/php-coveralls-with-psr.git (push)",
     ];
 
     // getCommand()
@@ -304,6 +304,6 @@ final class GitInfoCollectorTest extends ProjectTestCase
     protected function assertRemote(Remote $remote)
     {
         self::assertSame('origin', $remote->getName());
-        self::assertSame('git@github.com:php-coveralls/php-coveralls.git', $remote->getUrl());
+        self::assertSame('git@github.com:b3kn/php-coveralls-with-psr.git', $remote->getUrl());
     }
 }
