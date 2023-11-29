@@ -75,7 +75,7 @@ class GitInfoCollector
         foreach ($branchesResult as $result) {
             if ($result === '* (no branch)') {
                 // Case detected on Travis PUSH hook for tags, can be reporduced by following command:
-                // $ git clone --depth=1 --branch=v2.4.0 https://github.com/php-coveralls/php-coveralls.git php-coveralls && cd php-coveralls && git branch
+                // $ git clone --depth=1 --branch=v2.4.0 https://github.com/b3kn/php-coveralls-with-psr.git php-coveralls && cd php-coveralls && git branch
                 // * (no branch)
                 return '(no branch)';
             }
